@@ -3,7 +3,11 @@
   let inputValue = ''
 
   const addToList = () => {
-    list = [...list, inputValue]
+    list = [...list, {
+      title: inputValue,
+      completed: false,
+      created: Date.now()
+    }]
     inputValue = ''
     console.log(list)
   }

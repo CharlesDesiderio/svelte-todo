@@ -4,7 +4,7 @@
   const toggleStatus = () => {
     console.log(item)
   }
-  
+
 </script>
 
-<li on:click={toggleStatus}>{item}</li>
+<li on:click={toggleStatus}>{item.title}</li>
